@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect } from "react";
+import { useMemo, useState } from "react";
 import { useTable, Column, CellProps } from "react-table";
 import { useFinancialRecords } from "../../contexts/financial-record-context";
 import { FinancialRecord } from "../../contexts/financial-record-context";
@@ -151,7 +151,7 @@ export const FinancialRecordList = () => {
           ))}
         </thead>
         <tbody {...getTableBodyProps()}>
-          {rows.map((row, idx) => {
+          {rows.map((row) => {
             prepareRow(row);
             return (
               <tr {...row.getRowProps()}>
