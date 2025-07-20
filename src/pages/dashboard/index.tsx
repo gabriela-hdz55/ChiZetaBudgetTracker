@@ -18,7 +18,7 @@ export const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <h1>Chi Zeta Budget Spring 2025</h1>
+      <h1>Chi Zeta Budget Fall 2025</h1>
       <FinancialRecordForm />
       <div>Total Monthly: ${totalMonthly}</div>
       <FinancialRecordList />
